@@ -105,17 +105,41 @@ ruby app.rb
 ```
 Great 🎉
 
-<!-- ## (6) Go further
+## (6) Going further
 In your app.rb add :
 ```ruby
-......
+#!/usr/bin/env ruby
+
+require 'sinatra'
 
 get '/' do
-	@user = 'User 545' #your name here
+	@user = 'my name is Alfred'
 	erb:page
-......
+end
 ```
 In your page.erb add :
-```ruby
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My app</title>
+</head>
+<body>
 
-``` -->
+	<p id="p-1">Hello 👋 <%= @user%> </p>
+
+	<style type="text/css">
+	#p-1{
+		position: absolute;
+		top: 10%; left: 50%; transform: translate(-50%, -50%);
+		background-color: indigo; color: white;
+		border-radius: 5px; padding: 20px;
+	}#p-1:hover{background-color: darkorange;padding: 22px;}
+	</style>
+
+</body>
+</html>
+```
+
+ChatMe : Hamedcuenca5@gmail.com 

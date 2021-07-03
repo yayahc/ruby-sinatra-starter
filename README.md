@@ -1,9 +1,9 @@
 ## Sinatra Ruby Starter
 
 Sinatra, a ruby micro-framework
-http://sinatrarb.com
-https://fr.wikipedia.org/wiki/Sinatra_(logiciel)
-https://github.com/sinatra/sinatra/blob/master/README.fr.md (fr)
+http://sinatrarb.com <br>
+https://fr.wikipedia.org/wiki/Sinatra_(logiciel) <br>
+https://github.com/sinatra/sinatra/blob/master/README.fr.md (fr) <br>
 
 
 ## (1) Install Ruby
@@ -20,7 +20,7 @@ $ gem install sinatra
 ```
 
 ## (3) Create your Sinatra application
-Go to your app folder and create the main file of your app like app.rb
+Go to your app folder and create the main file of your app like app.rb <br>
 Include in this file the following code:
 ```ruby
 require sinatra
@@ -30,7 +30,7 @@ end
 ```
 
 ## (4) Run your app
-To run your app you must create new files in your folder, name config.ru and GemFile
+To run your app you must create new files in your folder, name config.ru and GemFile <br>
 Include this code in your config.ru file
 ```ruby
 require './app.rb'
@@ -53,13 +53,13 @@ Now run your app
 ruby app.rb
 ```
 
-Congratulation your first sinatra app running on localhost:2021 🎉
-Go to your favorit browser and try localhost:2021
+Congratulation your first sinatra app running on localhost:2021 🎉 <br>
+Go to your favorit browser and try localhost:2021 <br>
 To stop your app Ctrl+C
 
 
 ## (5) erb
-erb is template manager use to put your html file (your 'Hello !' for moment), in seperate file wo can call a css file
+erb is template manager use to put your html file (your 'Hello !' for moment), in seperate file wo can  <br> call a css file <br>
 So to try erb, in your app.rb replace your 'Hello !' by erb:page like :
 ```ruby
 #!/usr/bin/env ruby
@@ -71,9 +71,9 @@ get '/' do
 	erb:page
 end
 ```
-Now let's create your template.
-Create new folder, name views
-Creat new file, name page.erb in your views folder
+Now let's create your template. <br>
+Create new folder, name views <br>
+Creat new file, name page.erb in your views folder <br>
 Include this following code in your page.erb :
 ```html
 <!DOCTYPE html>

@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'gemfile'
 require 'sinatra'
+
+set :port, 5000
 
 get '/' do
 	erb:page

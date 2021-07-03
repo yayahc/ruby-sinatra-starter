@@ -3,6 +3,8 @@
 Sinatra, a ruby micro-framework
 http://sinatrarb.com
 https://fr.wikipedia.org/wiki/Sinatra_(logiciel)
+https://github.com/sinatra/sinatra/blob/master/README.fr.md (fr)
+
 
 ## (1) Install Ruby
 https://www.ruby-lang.org/fr/downloads/
@@ -54,3 +56,18 @@ ruby app.rb
 Congratulation your first sinatra app running on localhost:2021 🎉
 Go to your favorit browser and try localhost:2021
 To stop your app Ctrl+C
+
+
+## (5) erb
+erb is use to put your html file (your 'Hello !' for moment), in seperate file wo can call a css file
+So to try erb, in your app.rb replace your 'Hello !' by erb:page like :
+```ruby
+#!/usr/bin/env ruby
+
+set :port, 2021
+require 'sinatra'
+
+get '/' do
+	erb:page
+end
+```

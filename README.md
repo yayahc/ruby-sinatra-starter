@@ -59,7 +59,7 @@ To stop your app Ctrl+C
 
 
 ## (5) erb
-erb is use to put your html file (your 'Hello !' for moment), in seperate file wo can call a css file
+erb is template manager use to put your html file (your 'Hello !' for moment), in seperate file wo can call a css file
 So to try erb, in your app.rb replace your 'Hello !' by erb:page like :
 ```ruby
 #!/usr/bin/env ruby
@@ -71,3 +71,36 @@ get '/' do
 	erb:page
 end
 ```
+Now let's create your template.
+Create new folder, name views
+Creat new file, name page.erb in your views folder
+Include this following code in your page.erb :
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My first sinatra app</title>
+</head>
+<body style="border: 2px solid red;">
+
+	<p id="p-1">Hello 👋</p>
+
+	<style type="text/css">
+	#p-1{
+		position: absolute;
+		top: 10%; left: 50%; transform: translate(-50%, -50%);
+		background-color: indigo; color: white;
+		border-radius: 5px; padding: 20px;
+	}
+	</style>
+
+</body>
+</html>
+```
+
+Run your app
+```bash
+ruby app.rb
+```
+Great 🎉

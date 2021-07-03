@@ -3,6 +3,6 @@
 require 'sinatra'
 
 get '/' do
-	# @user = 'User 545' #your name here
+	@user = 'User 404' #your name here
 	erb:page
 end

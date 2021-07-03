@@ -104,3 +104,18 @@ Run your app
 ruby app.rb
 ```
 Great 🎉
+
+<!-- ## (6) Go further
+In your app.rb add :
+```ruby
+......
+
+get '/' do
+	@user = 'User 545' #your name here
+	erb:page
+......
+```
+In your page.erb add :
+```ruby
+
+``` -->
